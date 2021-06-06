@@ -33,11 +33,8 @@ public class Main {
         System.out.print("Enter the number of hours since your last drink. ");
         int time = input.nextInt();
 
-
-
         //BAC = (A × 5.14 / W × r) − .015 × H
-
-        double bac = (alcohol * 5.14 / weight * ratio) - 0.15 * time;
+        double bac = (alcohol * 5.14 / weight * ratio) - 0.015 * time;
         System.out.printf("Your BAC is %.2f%n", bac);
 
         if(bac < 0.08){
